@@ -1,0 +1,31 @@
+
+"use strict";
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Met à jour automatiquement l'année du pied de page.
+  const yearElement = document.getElementById("year");
+
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+
+  // Prépare les icônes Lucide si la bibliothèque est chargée.
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
+
+  // Affiche un état actif pour les liens de navigation sélectionnés.
+  const navigationLinks = document.querySelectorAll(".main-nav a");
+
+  navigationLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navigationLinks.forEach((item) => {
+        item.removeAttribute("aria-current");
+      });
+
+      link.setAttribute("aria-current", "location");
+    });
+  });
+
+  console.info("PsychoConnect est initialisé.");
+});
