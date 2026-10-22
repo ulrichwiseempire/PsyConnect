@@ -332,4 +332,24 @@ a {
     transition-duration: 0.01ms !important;
   }
   }
-  
+  .feature-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: #edf2ff;
+  color: #3563e9;
+}
+
+.feature-icon svg {
+  width: 25px;
+  height: 25px;
+  stroke-width: 1.8;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+}
