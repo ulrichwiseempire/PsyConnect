@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#101828">
+  <meta name="description" content="PsychoConnect, la plateforme d'apprentissage et de collaboration des étudiants en psychologie.">
+
+  <title>PsychoConnect — Le campus dans ta poche</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="site-header">
+      <a href="./" class="brand" aria-label="PsychoConnect, accueil">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>Psycho<span class="brand-accent">Connect</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#bibliotheque">Bibliothèque</a>
+        <a href="#communaute">Communauté</a>
+      </nav>
+
+      <a class="login-link" href="#connexion">Connexion</a>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil">
+        <p class="eyebrow">LA COMMUNAUTÉ DES ÉTUDIANTS EN PSYCHOLOGIE</p>
+
+        <h1>Comprends mieux.<br>
+          <span>Réussis ensemble.</span>
+        </h1>
+
+        <p class="hero-description">
+          Tes cours, tes résumés, tes camarades et ton assistant
+          d'étude réunis dans un seul espace.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#bibliotheque">
+            Explorer la plateforme
+          </a>
+          <a class="button button-secondary" href="#communaute">
+            Découvrir la communauté
+          </a>
+        </div>
+      </section>
+
+      <section class="features" id="bibliotheque">
+        <div class="section-heading">
+          <p class="eyebrow">TON ESPACE D'ÉTUDE</p>
+          <h2>Tout pour apprendre efficacement</h2>
+          <p>Une base de travail organisée autour de tes études.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Bibliothèque de cours</h3>
+            <p>Retrouve les cours, résumés et exercices de ta promotion.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Assistant d'étude IA</h3>
+            <p>Prépare-toi à poser tes questions et à mieux comprendre tes cours.</p>
+          </article>
+
+          <article class="feature-card" id="communaute">
+            <h3>Communauté étudiante</h3>
+            <p>Échange avec tes camarades et organise tes révisions en groupe.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> PsychoConnect. Apprendre. Partager. Réussir ensemble.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+  </html>
+  
