@@ -89,6 +89,101 @@
 </article>
         </div>
       </section>
+ 
+<section class="auth-section" id="connexion">
+  <div class="section-heading">
+    <p class="eyebrow">REJOINS LA COMMUNAUTÉ</p>
+    <h2>Ton espace étudiant</h2>
+    <p>Connecte-toi ou crée ton compte pour rejoindre PsychoConnect.</p>
+  </div>
+
+  <div class="auth-card">
+    <h3>Connexion</h3>
+    <form id="login-form">
+      <label for="login-email">Adresse e-mail</label>
+      <input
+        type="email"
+        id="login-email"
+        placeholder="exemple@email.com"
+        required
+      />
+
+      <label for="login-password">Mot de passe</label>
+      <input
+        type="password"
+        id="login-password"
+        placeholder="Ton mot de passe"
+        required
+      />
+
+      <button type="submit" class="button button-primary">
+        Se connecter
+      </button>
+    </form>
+
+    <p class="auth-note">
+      Pas encore de compte ?
+      <a href="#inscription">Créer un compte</a>
+    </p>
+  </div>
+
+  <div class="auth-card" id="inscription">
+    <h3>Créer un compte étudiant</h3>
+    <form id="signup-form">
+      <label for="signup-name">Nom complet</label>
+      <input
+        type="text"
+        id="signup-name"
+        placeholder="Ton nom complet"
+        required
+      />
+
+      <label for="signup-email">Adresse e-mail</label>
+      <input
+        type="email"
+        id="signup-email"
+        placeholder="exemple@email.com"
+        required
+      />
+
+      <label for="signup-password">Mot de passe</label>
+      <input
+        type="password"
+        id="signup-password"
+        placeholder="Au moins 8 caractères"
+        minlength="8"
+        required
+      />
+
+      <label for="signup-level">Niveau d'étude</label>
+      <select id="signup-level" required>
+        <option value="">Choisir ton niveau</option>
+        <option value="L1">Licence 1</option>
+        <option value="L2">Licence 2</option>
+        <option value="L3">Licence 3</option>
+        <option value="M1">Master 1</option>
+        <option value="M2">Master 2</option>
+      </select>
+
+      <label for="signup-specialization">Spécialité (L3 et Master)</label>
+      <select id="signup-specialization">
+        <option value="">Aucune / pas encore choisie</option>
+        <option value="Travail">Psychologie du travail</option>
+        <option value="Santé">Psychologie de la santé</option>
+        <option value="Éducation">Psychologie de l'éducation</option>
+      </select>
+
+      <button type="submit" class="button button-primary">
+        Envoyer ma demande
+      </button>
+    </form>
+
+    <p class="auth-note">
+      Ton compte devra être approuvé par un administrateur.
+    </p>
+  </div>
+</section>
+      
     </main>
 
     <footer class="site-footer">
