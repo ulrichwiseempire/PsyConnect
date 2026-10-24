@@ -353,3 +353,124 @@ a {
 .feature-card h3 {
   margin-top: 0;
 }
+
+/* ===== ESPACE CONNEXION ET INSCRIPTION ===== */
+
+.auth-section {
+  padding: 72px 20px;
+  background: #f7f9fc;
+}
+
+.auth-section .section-heading {
+  max-width: 650px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.auth-section .section-heading h2 {
+  margin: 10px 0;
+  color: #101828;
+  font-size: clamp(26px, 5vw, 36px);
+}
+
+.auth-section .section-heading > p:last-child {
+  color: #667085;
+  line-height: 1.7;
+}
+
+.auth-card {
+  max-width: 480px;
+  margin: 0 auto 28px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(16, 24, 40, 0.06);
+  scroll-margin-top: 24px;
+}
+
+.auth-card h3 {
+  margin: 0 0 24px;
+  color: #101828;
+  font-size: 22px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth-card label {
+  margin-top: 8px;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.auth-card input,
+.auth-card select {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #101828;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.auth-card input:focus,
+.auth-card select:focus {
+  outline: 3px solid rgba(53, 99, 233, 0.15);
+  border-color: #3563e9;
+}
+
+.auth-card .button {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 18px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #3563e9;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-card .button:hover {
+  background: #254bc5;
+}
+
+.auth-note {
+  margin: 20px 0 0;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.auth-note a {
+  color: #3563e9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-note a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .auth-section {
+    padding: 48px 16px;
+  }
+
+  .auth-card {
+    padding: 22px 18px;
+  }
+}
+
